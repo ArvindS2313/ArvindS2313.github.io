@@ -64,11 +64,6 @@ p.about-intro {
     margin-bottom: 1rem;
 }
 
-p.cs-creative {
-    text-align: start;
-    padding-left: 15%;
-}
-
 a {
     color: blue;
 }
@@ -82,12 +77,6 @@ img.main {
     border: 3px dashed black;
 }
 
-.img-git {
-    max-width: 100%;
-    object-fit: cover;
-
-}
-
 code {
     display: block;
     font-size: 1rem;
@@ -96,8 +85,29 @@ code {
 
 section {
     display: grid;
-    grid-template-columns: 60% 20% 20%;
-    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+    margin: 2rem;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.img-creative {
+    min-width: 35%;
+    height: auto;
+}
+
+.cs-creative {
+    text-align: start;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 footer {
