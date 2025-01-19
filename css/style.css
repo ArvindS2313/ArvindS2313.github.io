@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -7,13 +6,14 @@
 }
 
 body {
-    background-color: #00ffff;
+    background-color: rgb(253, 221, 161);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 
     text-align: center;
-    font-family: "Roboto", "Sans Serif";
+    font-family: "Montserrat", sans-serif;
+
 }
 
 header {
@@ -52,6 +52,11 @@ h1 {
 
 p {
     font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
 }
 
 p.welcome {
@@ -59,12 +64,10 @@ p.welcome {
     margin: 2rem;
 }
 
-.about-intro {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+p.research-body {
+    width: 90%;
 }
+
 
 a {
     color: blue;
@@ -81,36 +84,41 @@ img.main {
 
 code {
     display: block;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-top: 2rem;
 }
 
 section {
+    margin: 2.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.goals-img {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
-
-    margin: 2rem;
 }
 
 div {
     display: flex;
-    flex-direction: row;
-    align-items: start;
-    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
 }
 
-.img-creative {
+.img-elaboration {
     min-width: 35%;
     height: auto;
 }
 
-.cs-creative {
-    text-align: start;
-    margin-left: 10%;
-    margin-right: 10%;
+.cs-elaboration {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 footer {
@@ -120,13 +128,13 @@ footer {
 
 .social-media {
     display: flex;
-    flex-direction: row;
+    flex-direction: colum;
     justify-content: center;
     gap: 20px;
 }
 
-@media screen and (min-width: 576px) {
-
+@media screen and (min-width: 768px) {
+    
     main {
         max-width: calc(100% - 90px);
         white-space: no-wrap;
@@ -147,8 +155,21 @@ footer {
         grid-template-rows: none;
     }
 
+    div {
+        flex-direction: column;
+    }
+
+    p.research-body {
+        max-width: 80%;
+    }
+
 }
 
-@media screen and (min-width) {
+@media screen and (min-width: 1024px) {
+
+    p.research-body {
+        max-width: 70%;
+    }
+
     
 }
