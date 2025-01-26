@@ -56,7 +56,6 @@ p {
     margin-bottom: 1rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-
 }
 
 p.welcome {
@@ -66,6 +65,14 @@ p.welcome {
 
 p.research-body {
     width: 90%;
+}
+
+p.music-des {
+    font-size: 1.1rem;
+}
+
+p.listen-music {
+    margin-bottom: 2rem;
 }
 
 
@@ -102,14 +109,6 @@ section.goals-img {
     align-items: center;
 }
 
-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
 .img-elaboration {
     min-width: 35%;
     height: auto;
@@ -119,6 +118,29 @@ div {
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+div.music-box {
+    border: solid darkblue 3px;
+}
+
+article {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px 100px;
+    flex-flow: row wrap;
+}
+
+audio {
+    margin-bottom: 0.5rem;
 }
 
 footer {
